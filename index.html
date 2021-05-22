@@ -6,14 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build.css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />    
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />  
+    <!--endbuild-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css" />
+  
 
     <title>NuCamp: A Better Way To Camp</title>
 
@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-xl-2 mt-4 order-last">
-                        <a href="#reserveModal" role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-large btn-info">Reserve Campsite</a>
+                        <a href="#reserveModal" role="button" id="reserveButton" class="btn btn-large btn-info">Reserve Campsite</a>
                     </div>            
                     <div class="col-4 col-sm-3 col-md-2 align-self-center">
                         <a href="#"><img src="img/logo.png" class="img-fluid" /></a>
@@ -45,7 +45,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title">Reserve a campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -113,7 +113,7 @@
                         <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                     </ul>
                     <span class="navbar-text ml-auto">
-                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <a role="button" id="loginButton">
                             <i class="fa fa-sign-in"></i> Login
                         </a>
                     </span>
@@ -283,12 +283,12 @@
     </footer>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <!-- build:js js/main.s -->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-        <script src="js/scripts.js">
-        </script>
+        <script src="js/scripts.js?"></script>
+        <!--endbuild-->
 </body>
 
 </html>
